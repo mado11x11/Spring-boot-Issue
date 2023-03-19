@@ -1,0 +1,18 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hello Thymeleaf</title>
+</head>
+<body>
+<div class="container">
+    <h1>天気予報</h1>
+    <p th:text="${weatherRes.Text}"></p></p>
+    <p>日時 : <span th:text="${weatherRes.ReportDatetime}"></span></p>
+    <p>エリア : <span th:text="${weatherRes.TargetArea}"></span></p>
+    <p>発行元 :<span th:text="${weatherRes.PublishingOffice}"></span></p>
+</div>
+</body>
+</html>
